@@ -10,6 +10,17 @@
 
 @implementation AXModalDatePickerSampleViewController
 
+- (void)doneBtnDidPressed:(UIDatePicker *)datePicker
+{
+    [self show];
+    NSLog(@"Done pressed!:%@",datePicker);
+}
+- (void)cancelBtnDidPressed
+{
+    [self show];
+    NSLog(@"cancel pressed!");
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -22,6 +33,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self show];
+}
+
+- (void)show
+{
+    // Do any additional setup after loading the view, typically from a nib.
+    AXModalDatePicker *modalDatePicker=[[AXModalDatePicker alloc] init];
+    modalDatePicker.delegate=self;
+    [self.view addSubview:modalDatePicker];
+    [modalDatePicker release];
 }
 
 - (void)viewDidUnload

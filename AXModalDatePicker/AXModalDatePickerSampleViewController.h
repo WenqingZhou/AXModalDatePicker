@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AXModalDatePicker.h"
 
-@interface AXModalDatePickerSampleViewController : UIViewController
+@interface AXModalDatePickerSampleViewController : UIViewController <AXModalDatePickerDelegate> 
+
+- (void)show;
 
 @end

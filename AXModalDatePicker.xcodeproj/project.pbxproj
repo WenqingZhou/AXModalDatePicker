@@ -20,6 +20,7 @@
 		EFB41FD2150796D8003379CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB3150796D8003379CE /* Foundation.framework */; };
 		EFB41FDA150796D8003379CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFB41FD8150796D8003379CE /* InfoPlist.strings */; };
 		EFB41FDD150796D9003379CE /* AXModalDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FDC150796D9003379CE /* AXModalDatePickerTests.m */; };
+		EFB41FE8150797A7003379CE /* AXModalDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FE7150797A7003379CE /* AXModalDatePicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +38,23 @@
 		EFB41FB1150796D8003379CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EFB41FB3150796D8003379CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFB41FB5150796D8003379CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EFB41FB9150796D8003379CE /* AXModalDatePicker-Info.plist */ = {isa = PBXFileReference; path = "AXModalDatePicker-Info.plist"; sourceTree = "<group>"; };
+		EFB41FB9150796D8003379CE /* AXModalDatePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AXModalDatePicker-Info.plist"; sourceTree = "<group>"; };
 		EFB41FBB150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EFB41FBD150796D8003379CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFB41FBF150796D8003379CE /* AXModalDatePicker-Prefix.pch */ = {isa = PBXFileReference; path = "AXModalDatePicker-Prefix.pch"; sourceTree = "<group>"; };
-		EFB41FC0150796D8003379CE /* AXModalDatePickerSampleAppDelegate.h */ = {isa = PBXFileReference; path = AXModalDatePickerSampleAppDelegate.h; sourceTree = "<group>"; };
+		EFB41FBF150796D8003379CE /* AXModalDatePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AXModalDatePicker-Prefix.pch"; sourceTree = "<group>"; };
+		EFB41FC0150796D8003379CE /* AXModalDatePickerSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXModalDatePickerSampleAppDelegate.h; sourceTree = "<group>"; };
 		EFB41FC1150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerSampleAppDelegate.m; sourceTree = "<group>"; };
-		EFB41FC3150796D8003379CE /* AXModalDatePickerSampleViewController.h */ = {isa = PBXFileReference; path = AXModalDatePickerSampleViewController.h; sourceTree = "<group>"; };
+		EFB41FC3150796D8003379CE /* AXModalDatePickerSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXModalDatePickerSampleViewController.h; sourceTree = "<group>"; };
 		EFB41FC4150796D8003379CE /* AXModalDatePickerSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerSampleViewController.m; sourceTree = "<group>"; };
 		EFB41FC7150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AXModalDatePickerSampleViewController.xib; sourceTree = "<group>"; };
 		EFB41FCE150796D8003379CE /* AXModalDatePickerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXModalDatePickerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB41FCF150796D8003379CE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		EFB41FD7150796D8003379CE /* AXModalDatePickerTests-Info.plist */ = {isa = PBXFileReference; path = "AXModalDatePickerTests-Info.plist"; sourceTree = "<group>"; };
+		EFB41FD7150796D8003379CE /* AXModalDatePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AXModalDatePickerTests-Info.plist"; sourceTree = "<group>"; };
 		EFB41FD9150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EFB41FDB150796D8003379CE /* AXModalDatePickerTests.h */ = {isa = PBXFileReference; path = AXModalDatePickerTests.h; sourceTree = "<group>"; };
+		EFB41FDB150796D8003379CE /* AXModalDatePickerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXModalDatePickerTests.h; sourceTree = "<group>"; };
 		EFB41FDC150796D9003379CE /* AXModalDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerTests.m; sourceTree = "<group>"; };
+		EFB41FE6150797A7003379CE /* AXModalDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXModalDatePicker.h; sourceTree = "<group>"; };
+		EFB41FE7150797A7003379CE /* AXModalDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				EFB41FC4150796D8003379CE /* AXModalDatePickerSampleViewController.m */,
 				EFB41FC6150796D8003379CE /* AXModalDatePickerSampleViewController.xib */,
 				EFB41FB8150796D8003379CE /* Supporting Files */,
+				EFB41FE6150797A7003379CE /* AXModalDatePicker.h */,
+				EFB41FE7150797A7003379CE /* AXModalDatePicker.m */,
 			);
 			path = AXModalDatePicker;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				EFB41FBE150796D8003379CE /* main.m in Sources */,
 				EFB41FC2150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m in Sources */,
 				EFB41FC5150796D8003379CE /* AXModalDatePickerSampleViewController.m in Sources */,
+				EFB41FE8150797A7003379CE /* AXModalDatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +362,12 @@
 		EFB41FE1150796D9003379CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenqing zhou (6L6M2DAVHS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "AXModalDatePicker/AXModalDatePicker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BD2CE7EE-D5C7-4936-BC67-44429902CB39";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -367,10 +375,12 @@
 		EFB41FE2150796D9003379CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wenqing zhou (6L6M2DAVHS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
 				INFOPLIST_FILE = "AXModalDatePicker/AXModalDatePicker-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BD2CE7EE-D5C7-4936-BC67-44429902CB39";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
