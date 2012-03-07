@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFB41FB2150796D8003379CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB1150796D8003379CE /* UIKit.framework */; };
+		EFB41FB4150796D8003379CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB3150796D8003379CE /* Foundation.framework */; };
+		EFB41FB6150796D8003379CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB5150796D8003379CE /* CoreGraphics.framework */; };
+		EFB41FBC150796D8003379CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFB41FBA150796D8003379CE /* InfoPlist.strings */; };
+		EFB41FBE150796D8003379CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FBD150796D8003379CE /* main.m */; };
+		EFB41FC2150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FC1150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m */; };
+		EFB41FC5150796D8003379CE /* AXModalDatePickerSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FC4150796D8003379CE /* AXModalDatePickerSampleViewController.m */; };
+		EFB41FC8150796D8003379CE /* AXModalDatePickerSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB41FC6150796D8003379CE /* AXModalDatePickerSampleViewController.xib */; };
+		EFB41FD0150796D8003379CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FCF150796D8003379CE /* SenTestingKit.framework */; };
+		EFB41FD1150796D8003379CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB1150796D8003379CE /* UIKit.framework */; };
+		EFB41FD2150796D8003379CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB41FB3150796D8003379CE /* Foundation.framework */; };
+		EFB41FDA150796D8003379CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFB41FD8150796D8003379CE /* InfoPlist.strings */; };
+		EFB41FDD150796D9003379CE /* AXModalDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB41FDC150796D9003379CE /* AXModalDatePickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFB41FD3150796D8003379CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB41FA4150796D8003379CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB41FAC150796D8003379CE;
+			remoteInfo = AXModalDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFB41FAD150796D8003379CE /* AXModalDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXModalDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB41FB1150796D8003379CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFB41FB3150796D8003379CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFB41FB5150796D8003379CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFB41FB9150796D8003379CE /* AXModalDatePicker-Info.plist */ = {isa = PBXFileReference; path = "AXModalDatePicker-Info.plist"; sourceTree = "<group>"; };
+		EFB41FBB150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFB41FBD150796D8003379CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFB41FBF150796D8003379CE /* AXModalDatePicker-Prefix.pch */ = {isa = PBXFileReference; path = "AXModalDatePicker-Prefix.pch"; sourceTree = "<group>"; };
+		EFB41FC0150796D8003379CE /* AXModalDatePickerSampleAppDelegate.h */ = {isa = PBXFileReference; path = AXModalDatePickerSampleAppDelegate.h; sourceTree = "<group>"; };
+		EFB41FC1150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerSampleAppDelegate.m; sourceTree = "<group>"; };
+		EFB41FC3150796D8003379CE /* AXModalDatePickerSampleViewController.h */ = {isa = PBXFileReference; path = AXModalDatePickerSampleViewController.h; sourceTree = "<group>"; };
+		EFB41FC4150796D8003379CE /* AXModalDatePickerSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerSampleViewController.m; sourceTree = "<group>"; };
+		EFB41FC7150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AXModalDatePickerSampleViewController.xib; sourceTree = "<group>"; };
+		EFB41FCE150796D8003379CE /* AXModalDatePickerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXModalDatePickerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB41FCF150796D8003379CE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		EFB41FD7150796D8003379CE /* AXModalDatePickerTests-Info.plist */ = {isa = PBXFileReference; path = "AXModalDatePickerTests-Info.plist"; sourceTree = "<group>"; };
+		EFB41FD9150796D8003379CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFB41FDB150796D8003379CE /* AXModalDatePickerTests.h */ = {isa = PBXFileReference; path = AXModalDatePickerTests.h; sourceTree = "<group>"; };
+		EFB41FDC150796D9003379CE /* AXModalDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXModalDatePickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFB41FAA150796D8003379CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FB2150796D8003379CE /* UIKit.framework in Frameworks */,
+				EFB41FB4150796D8003379CE /* Foundation.framework in Frameworks */,
+				EFB41FB6150796D8003379CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB41FCA150796D8003379CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FD0150796D8003379CE /* SenTestingKit.framework in Frameworks */,
+				EFB41FD1150796D8003379CE /* UIKit.framework in Frameworks */,
+				EFB41FD2150796D8003379CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFB41FA2150796D8003379CE = {
+			isa = PBXGroup;
+			children = (
+				EFB41FB7150796D8003379CE /* AXModalDatePicker */,
+				EFB41FD5150796D8003379CE /* AXModalDatePickerTests */,
+				EFB41FB0150796D8003379CE /* Frameworks */,
+				EFB41FAE150796D8003379CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFB41FAE150796D8003379CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FAD150796D8003379CE /* AXModalDatePicker.app */,
+				EFB41FCE150796D8003379CE /* AXModalDatePickerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFB41FB0150796D8003379CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FB1150796D8003379CE /* UIKit.framework */,
+				EFB41FB3150796D8003379CE /* Foundation.framework */,
+				EFB41FB5150796D8003379CE /* CoreGraphics.framework */,
+				EFB41FCF150796D8003379CE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB41FB7150796D8003379CE /* AXModalDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FC0150796D8003379CE /* AXModalDatePickerSampleAppDelegate.h */,
+				EFB41FC1150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m */,
+				EFB41FC3150796D8003379CE /* AXModalDatePickerSampleViewController.h */,
+				EFB41FC4150796D8003379CE /* AXModalDatePickerSampleViewController.m */,
+				EFB41FC6150796D8003379CE /* AXModalDatePickerSampleViewController.xib */,
+				EFB41FB8150796D8003379CE /* Supporting Files */,
+			);
+			path = AXModalDatePicker;
+			sourceTree = "<group>";
+		};
+		EFB41FB8150796D8003379CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FB9150796D8003379CE /* AXModalDatePicker-Info.plist */,
+				EFB41FBA150796D8003379CE /* InfoPlist.strings */,
+				EFB41FBD150796D8003379CE /* main.m */,
+				EFB41FBF150796D8003379CE /* AXModalDatePicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFB41FD5150796D8003379CE /* AXModalDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FDB150796D8003379CE /* AXModalDatePickerTests.h */,
+				EFB41FDC150796D9003379CE /* AXModalDatePickerTests.m */,
+				EFB41FD6150796D8003379CE /* Supporting Files */,
+			);
+			path = AXModalDatePickerTests;
+			sourceTree = "<group>";
+		};
+		EFB41FD6150796D8003379CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFB41FD7150796D8003379CE /* AXModalDatePickerTests-Info.plist */,
+				EFB41FD8150796D8003379CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB41FAC150796D8003379CE /* AXModalDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB41FE0150796D9003379CE /* Build configuration list for PBXNativeTarget "AXModalDatePicker" */;
+			buildPhases = (
+				EFB41FA9150796D8003379CE /* Sources */,
+				EFB41FAA150796D8003379CE /* Frameworks */,
+				EFB41FAB150796D8003379CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXModalDatePicker;
+			productName = AXModalDatePicker;
+			productReference = EFB41FAD150796D8003379CE /* AXModalDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFB41FCD150796D8003379CE /* AXModalDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB41FE3150796D9003379CE /* Build configuration list for PBXNativeTarget "AXModalDatePickerTests" */;
+			buildPhases = (
+				EFB41FC9150796D8003379CE /* Sources */,
+				EFB41FCA150796D8003379CE /* Frameworks */,
+				EFB41FCB150796D8003379CE /* Resources */,
+				EFB41FCC150796D8003379CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB41FD4150796D8003379CE /* PBXTargetDependency */,
+			);
+			name = AXModalDatePickerTests;
+			productName = AXModalDatePickerTests;
+			productReference = EFB41FCE150796D8003379CE /* AXModalDatePickerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFB41FA4150796D8003379CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "university of helsinki";
+			};
+			buildConfigurationList = EFB41FA7150796D8003379CE /* Build configuration list for PBXProject "AXModalDatePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EFB41FA2150796D8003379CE;
+			productRefGroup = EFB41FAE150796D8003379CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB41FAC150796D8003379CE /* AXModalDatePicker */,
+				EFB41FCD150796D8003379CE /* AXModalDatePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFB41FAB150796D8003379CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FBC150796D8003379CE /* InfoPlist.strings in Resources */,
+				EFB41FC8150796D8003379CE /* AXModalDatePickerSampleViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB41FCB150796D8003379CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FDA150796D8003379CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFB41FCC150796D8003379CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFB41FA9150796D8003379CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FBE150796D8003379CE /* main.m in Sources */,
+				EFB41FC2150796D8003379CE /* AXModalDatePickerSampleAppDelegate.m in Sources */,
+				EFB41FC5150796D8003379CE /* AXModalDatePickerSampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB41FC9150796D8003379CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB41FDD150796D9003379CE /* AXModalDatePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB41FD4150796D8003379CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB41FAC150796D8003379CE /* AXModalDatePicker */;
+			targetProxy = EFB41FD3150796D8003379CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFB41FBA150796D8003379CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB41FBB150796D8003379CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFB41FC6150796D8003379CE /* AXModalDatePickerSampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB41FC7150796D8003379CE /* en */,
+			);
+			name = AXModalDatePickerSampleViewController.xib;
+			sourceTree = "<group>";
+		};
+		EFB41FD8150796D8003379CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFB41FD9150796D8003379CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFB41FDE150796D9003379CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFB41FDF150796D9003379CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFB41FE1150796D9003379CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "AXModalDatePicker/AXModalDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFB41FE2150796D9003379CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "AXModalDatePicker/AXModalDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFB41FE4150796D9003379CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AXModalDatePicker.app/AXModalDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "AXModalDatePickerTests/AXModalDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EFB41FE5150796D9003379CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AXModalDatePicker.app/AXModalDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AXModalDatePicker/AXModalDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "AXModalDatePickerTests/AXModalDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFB41FA7150796D8003379CE /* Build configuration list for PBXProject "AXModalDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB41FDE150796D9003379CE /* Debug */,
+				EFB41FDF150796D9003379CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB41FE0150796D9003379CE /* Build configuration list for PBXNativeTarget "AXModalDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB41FE1150796D9003379CE /* Debug */,
+				EFB41FE2150796D9003379CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFB41FE3150796D9003379CE /* Build configuration list for PBXNativeTarget "AXModalDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB41FE4150796D9003379CE /* Debug */,
+				EFB41FE5150796D9003379CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFB41FA4150796D8003379CE /* Project object */;
+}
