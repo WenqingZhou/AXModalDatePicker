@@ -12,12 +12,10 @@
 
 - (void)doneBtnDidPressed:(UIDatePicker *)datePicker
 {
-    [self show];
     NSLog(@"Done pressed!:%@",datePicker);
 }
 - (void)cancelBtnDidPressed
 {
-    [self show];
     NSLog(@"cancel pressed!");
 }
 
@@ -33,7 +31,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self show];
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setFrame:CGRectMake(110, 100, 100, 50)];
+    [button addTarget:self action:@selector(show) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Pop" forState:UIControlStateNormal];
+    [self.view addSubview:button];
 }
 
 - (void)show
@@ -41,7 +43,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     AXModalDatePicker *modalDatePicker=[[AXModalDatePicker alloc] init];
     modalDatePicker.delegate=self;
-    [self.view addSubview:modalDatePicker];
+    [UIView transitionWithView:self.view duration:0.6
+                       options:UIViewAnimationOptionTransitionCrossDissolve //change to whatever animation you like
+                    animations:^ { [self.view addSubview:modalDatePicker]; }
+                    completion:nil];
     [modalDatePicker release];
 }
 

@@ -20,6 +20,7 @@
 @property (retain,nonatomic) id <AXModalDatePickerDelegate> delegate;
 @property (retain,nonatomic) UIDatePicker *datePicker;
 @property (retain,nonatomic) UIToolbar *pickerToolBar;
+@property BOOL animatedOn;
 
 - (void)changeLayoutForOrientation:(UIInterfaceOrientation)orientation;
 - (void)cancelBtnDidPressed;

@@ -13,6 +13,7 @@
 @synthesize delegate;
 @synthesize datePicker;
 @synthesize pickerToolBar;
+@synthesize animatedOn;
 
 - (void)dealloc
 {
@@ -86,14 +87,14 @@
             self.frame=[[UIScreen mainScreen] bounds];
             self.frame=CGRectMake(self.frame.origin.y, self.frame.origin.x, self.frame.size.height, self.frame.size.width);
             self.datePicker.frame=CGRectMake(0, self.frame.size.height-216, 480, 216);
-            self.pickerToolBar.frame=CGRectMake(0, self.frame.size.height-216-30, 480, 30);
+            self.pickerToolBar.frame=CGRectMake(0, self.frame.size.height-216-40, 480, 40);
             break;
         }
         case UIInterfaceOrientationPortrait:
         case UIInterfaceOrientationPortraitUpsideDown:
             self.frame=[[UIScreen mainScreen] bounds];
             self.datePicker.frame=CGRectMake(0, self.frame.size.height-216, 320, 216);
-            self.pickerToolBar.frame=CGRectMake(0, self.frame.size.height-216-30, 320, 30);
+            self.pickerToolBar.frame=CGRectMake(0, self.frame.size.height-216-40, 320, 40);
             break;
         default:
             return;
