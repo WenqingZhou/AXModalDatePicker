@@ -1,30 +1,29 @@
-//
-//  AXModalDatePicker.h
-//  AXModalDatePicker
-//
-//  Created by wenqing zhou on 3/7/12.
-//  Copyright (c) 2012 university of helsinki. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @protocol AXModalDatePickerDelegate
 
-- (void)doneBtnDidPressed:(UIDatePicker *)datePicker;
-- (void)cancelBtnDidPressed;
+-(void)doneBtnDidPressed:(UIPickerView *)Picker;
+-(void)cancelBtnDidPressed;
 
 @end
 
 @interface AXModalDatePicker : UIView
 
-@property (retain,nonatomic) id <AXModalDatePickerDelegate> delegate;
-@property (retain,nonatomic) UIDatePicker *datePicker;
-@property (retain,nonatomic) UIToolbar *pickerToolBar;
-@property BOOL animatedOn;
+@property (nonatomic,retain) UIToolbar *toolBar;
+@property (nonatomic,retain) UIBarButtonItem *doneBtn;
+@property (nonatomic,retain) UIBarButtonItem *cancelBtn;
+@property (nonatomic,retain) UIPickerView *datePicker;
+@property (nonatomic,retain) UIView *pickerView;
+@property (nonatomic,retain) id <AXModalDatePickerDelegate> delegate;
+@property BOOL isHidden;
 
-- (void)changeLayoutForOrientation:(UIInterfaceOrientation)orientation;
-- (void)cancelBtnDidPressed;
-- (void)doneBtnDidPressed;
+- (AXModalDatePicker *)initWithDelegate:(id<AXModalDatePickerDelegate>)theDelegate andPicker:(id)picker;
+- (void)setHidden: (BOOL) hidden animated: (BOOL) animated;
 - (void)orientationChanged:(NSNotification *)notification;
+- (void)changeLayoutForOrientation:(UIInterfaceOrientation)orientation;
+- (void)datePicked;
+- (void)dateCancelled;
+- (void)setDoneTitle:(NSString *)string;
+- (void)setCancelTitle:(NSString *)string;
 
 @end

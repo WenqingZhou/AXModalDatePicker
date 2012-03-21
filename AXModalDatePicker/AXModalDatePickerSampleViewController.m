@@ -41,13 +41,12 @@
 - (void)show
 {
     // Do any additional setup after loading the view, typically from a nib.
-    AXModalDatePicker *modalDatePicker=[[AXModalDatePicker alloc] init];
-    modalDatePicker.delegate=self;
-    [UIView transitionWithView:self.view duration:0.6
-                       options:UIViewAnimationOptionTransitionCrossDissolve //change to whatever animation you like
-                    animations:^ { [self.view addSubview:modalDatePicker]; }
-                    completion:nil];
-    [modalDatePicker release];
+    UIDatePicker *datePicker=[[UIDatePicker alloc] init];
+    AXModalDatePicker *pickerView=[[AXModalDatePicker alloc] initWithDelegate:self andPicker:datePicker];
+    [datePicker release];
+    [pickerView setHidden:NO animated:YES];
+    [self.view addSubview:pickerView];
+    [pickerView release];
 }
 
 - (void)viewDidUnload
